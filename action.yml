@@ -1,0 +1,17 @@
+name: jsActions
+description: A GitHub Action to run JavaScript code.
+inputs:
+  number1:
+    description: 'The first number to add.'
+    required: true
+    default: 0
+  number2:
+    description: 'The second number to add.'    
+    required: true    
+    default: 0
+outputs:
+  result:
+    description: 'The result of adding the two numbers.'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
