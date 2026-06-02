@@ -11,6 +11,6 @@ jobs:
       - uses: ./
         id: jsAction
         with:
-          number1: 5
-          number2: 10
+          num1: 5
+          num2: 10
       - run: echo ${{steps.jsAction.outputs.result}}
